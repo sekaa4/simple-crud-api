@@ -15,7 +15,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\" --fix",
     "test": "jest --silent",
-    "test:verbose": "jest",
+    "test:verbose": "jest --verbose",
     "prod": "node dist/index.js"
   },
   "devDependencies": {
