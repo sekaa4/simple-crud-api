@@ -1,1 +1,3 @@
-export {};
+import { app } from './app';
+
+app();
