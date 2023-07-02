@@ -131,7 +131,7 @@ export class Endpoints {
             statusMessage: Status_Message.NOT_FOUND_MESSAGE,
             method: method,
             statusCode: Status_CODE.NOT_FOUND,
-            message: `User with ${id} doesn't exist`,
+            message: `User with ID <${id}> doesn't exist`,
           };
 
           return responseObject;
@@ -193,7 +193,7 @@ export class Endpoints {
           statusMessage: Status_Message.NOT_FOUND_MESSAGE,
           method: method,
           statusCode: Status_CODE.NOT_FOUND,
-          message: `User with ${id} doesn't exist`,
+          message: `User with ID <${id}> doesn't exist`,
         };
 
         return responseObject;
