@@ -11,5 +11,7 @@
   },
   "plugins": ["@typescript-eslint"],
   "ignorePatterns": [".eslintrc.json", "jest.config.js"],
-  "rules": {}
+  "rules": {
+    "unicorn/prefer-event-target": "off"
+  }
 }
