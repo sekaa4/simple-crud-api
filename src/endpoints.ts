@@ -69,7 +69,6 @@ export class Endpoints {
     if (isDynamicPath && method === Methods.GET) {
       const id = endpoint.split('/')[3]!;
       const isValidUUID = validate(id);
-      console.log('matches', id);
       const user = data.find((user) => user.id === id);
 
       if (!isValidUUID) {
@@ -111,7 +110,6 @@ export class Endpoints {
       const { isValidBodySchema } = checkBodySchema;
 
       if (isValidUUID && isValidBodySchema) {
-        console.log('matches', id);
         const user = data.find((user) => user.id === id);
 
         if (isValidUUID && user) {
@@ -164,7 +162,6 @@ export class Endpoints {
     if (isDynamicPath && method === Methods.DELETE) {
       const id = endpoint.split('/')[3]!;
       const isValidUUID = validate(id);
-      console.log('matches', id);
       const user = data.find((user) => user.id === id);
 
       if (!isValidUUID) {

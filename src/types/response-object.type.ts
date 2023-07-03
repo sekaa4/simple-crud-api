@@ -1,4 +1,3 @@
-import { data } from 'src/data';
 import { Methods, Status_CODE, Status_Message } from './constants';
 import { DataObject } from './data-object.type';
 

@@ -36,3 +36,7 @@ export const Status_Message = {
   SERVICE_UNAVAILABLE_MESSAGE: 'Service Unavailable',
   BAD_GATEWAY_MESSAGE: 'Bad Gateway',
 } as const;
+
+export const DEFAULT_PORT = 4000;
+
+export const DEFAULT_HOST = 'localhost';
