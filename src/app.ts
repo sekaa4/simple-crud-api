@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { createServer as createServerHttp, request } from 'node:http';
+import { createServer as createServerHttp } from 'node:http';
 import { Endpoints } from './endpoints';
 import { Methods, Status_CODE, Status_Message } from './types/constants';
 import { RequestDataObject } from './types/request-data-object.type';
@@ -39,7 +39,7 @@ export const app = () => {
     };
     const endpoints = new Endpoints('localhost');
     const responseObject: ResponseObject = endpoints.chooseEndpoint(requestObject);
-    const { statusCode, statusMessage, data, message, method } = responseObject;
+    const { statusCode, statusMessage, data, message } = responseObject;
 
     const jsonData = data ? JSON.stringify(data) : message ? JSON.stringify({ message }) : undefined;
 

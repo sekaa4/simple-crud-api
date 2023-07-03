@@ -3,7 +3,6 @@ import { RequestObject } from './types/request-object.type';
 import { ResponseObject } from './types/response-object.type';
 import { data } from './data';
 import { v4 as uuidv4, validate } from 'uuid';
-import { DataObject } from './types/data-object.type';
 import { RequestDataObject } from './types/request-data-object.type';
 
 export class Endpoints {
@@ -109,7 +108,7 @@ export class Endpoints {
       const id = endpoint.split('/')[3]!;
       const isValidUUID = validate(id);
       const checkBodySchema = this.checkBody(body);
-      const { isValidBodySchema, message } = checkBodySchema;
+      const { isValidBodySchema } = checkBodySchema;
 
       if (isValidUUID && isValidBodySchema) {
         console.log('matches', id);
