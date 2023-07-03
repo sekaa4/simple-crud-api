@@ -12,6 +12,7 @@
   "plugins": ["@typescript-eslint"],
   "ignorePatterns": [".eslintrc.json", "jest.config.js"],
   "rules": {
-    "unicorn/prefer-event-target": "off"
+    "unicorn/prefer-event-target": "off",
+    "unicorn/prefer-module": "off"
   }
 }
